@@ -1,0 +1,153 @@
+2022-01-17 06:06:34.155 [13] main/101/app C> Tarantool 1.10.2-0-gc0d8063b6
+2022-01-17 06:06:34.156 [13] main/101/app C> log level 5
+2022-01-17 06:06:34.156 [13] main/101/app I> mapping 1073741824 bytes for memtx tuple arena...
+2022-01-17 06:06:34.157 [13] main/101/app I> mapping 134217728 bytes for vinyl tuple arena...
+2022-01-17 06:06:34.159 [13] iproto/101/main I> binary: bound to 0.0.0.0:3301
+2022-01-17 06:06:34.159 [13] main/101/app I> initializing an empty data directory
+2022-01-17 06:06:34.170 [13] snapshot/101/main I> saving snapshot `/var/lib/tarantool/app/00000000000000000000.snap.inprogress'
+2022-01-17 06:06:34.174 [13] snapshot/101/main I> done
+2022-01-17 06:06:34.174 [13] main/101/app I> ready to accept requests
+2022-01-17 06:06:34.174 [13] main/108/checkpoint_daemon I> started
+2022-01-17 06:06:34.174 [13] main/108/checkpoint_daemon I> scheduled the next snapshot at Mon Jan 17 07:55:06 2022
+2022-01-17 06:06:34.174 [13] main/101/app I> set 'memtx_max_tuple_size' configuration option to 134217728
+2022-01-17 06:06:34.174 [13] main/101/app I> set 'checkpoint_count' configuration option to 6
+2022-01-17 06:06:34.177 [13] main/101/app tarantoolctl:532 E> Start failed: /usr/local/etc/tarantool/instances.enabled/app.lua:67: module 'cidLua/DevStat' not found:
+	no field package.preload['cidLua/DevStat']
+	no file './cidLua/DevStat.lua'
+	no file './cidLua/DevStat/init.lua'
+	no file './cidLua/DevStat.so'
+	no file '/opt/tarantool/.rocks/share/tarantool/cidLua/DevStat.lua'
+	no file '/opt/tarantool/.rocks/share/tarantool/cidLua/DevStat/init.lua'
+	no file '/opt/.rocks/share/tarantool/cidLua/DevStat.lua'
+	no file '/opt/.rocks/share/tarantool/cidLua/DevStat/init.lua'
+	no file '/.rocks/share/tarantool/cidLua/DevStat.lua'
+	no file '/.rocks/share/tarantool/cidLua/DevStat/init.lua'
+	no file '/opt/tarantool/.rocks/lib/tarantool/cidLua/DevStat.so'
+	no file '/opt/.rocks/lib/tarantool/cidLua/DevStat.so'
+	no file '/.rocks/lib/tarantool/cidLua/DevStat.so'
+	no file '/root/.luarocks/share/lua/5.1/cidLua/DevStat.lua'
+	no file '/root/.luarocks/share/lua/5.1/cidLua/DevStat/init.lua'
+	no file '/root/.luarocks/share/lua/cidLua/DevStat.lua'
+	no file '/root/.luarocks/share/lua/cidLua/DevStat/init.lua'
+	no file '/usr/local/share/tarantool/cidLua/DevStat.lua'
+	no file '/usr/local/share/tarantool/cidLua/DevStat/init.lua'
+	no file '/usr/share/tarantool/cidLua/DevStat.lua'
+	no file '/usr/share/tarantool/cidLua/DevStat/init.lua'
+	no file '/usr/local/share/lua/5.1/cidLua/DevStat.lua'
+	no file '/usr/local/share/lua/5.1/cidLua/DevStat/init.lua'
+	no file '/usr/share/lua/5.1/cidLua/DevStat.lua'
+	no file '/usr/share/lua/5.1/cidLua/DevStat/init.lua'
+	no file '/root/.luarocks/lib/lua/5.1/cidLua/DevStat.so'
+	no file '/root/.luarocks/lib/lua/cidLua/DevStat.so'
+	no file '/usr/local/lib64/tarantool/cidLua/DevStat.so'
+	no file '/usr/local/lib/tarantool/cidLua/DevStat.so'
+	no file '/usr/lib64/tarantool/cidLua/DevStat.so'
+	no file '/usr/local/lib64/lua/5.1/cidLua/DevStat.so'
+	no file '/usr/local/lib/lua/5.1/cidLua/DevStat.so'
+	no file '/usr/lib64/lua/5.1/cidLua/DevStat.so'
+	no file '/usr/share/lua/5.1/cidLua/DevStat.lua'
+	no file '/usr/share/lua/5.1/cidLua/DevStat/init.lua'
+	no file '/root/.luarocks/lib/lua/5.1/cidLua/DevStat.so'
+	no file '/root/.luarocks/lib/lua/cidLua/DevStat.so'
+	no file '/usr/local/lib64/tarantool/cidLua/DevStat.so'
+	no file '/usr/local/lib/tarantool/cidLua/DevStat.so'
+	no file '/usr/lib64/tarantool/cidLua/DevStat.so'
+	no file '/usr/local/lib64/lua/5.1/cidLua/DevStat.so'
+	no file '/usr/local/lib/lua/5.1/cidLua/DevStat.so'
+	no file '/usr/lib64/lua/5.1/cidLua/DevStat.so'
+2022-01-17 06:06:55.208 [14] main/101/app C> Tarantool 1.10.2-0-gc0d8063b6
+2022-01-17 06:06:55.208 [14] main/101/app C> log level 5
+2022-01-17 06:06:55.208 [14] main/101/app I> mapping 1073741824 bytes for memtx tuple arena...
+2022-01-17 06:06:55.208 [14] main/101/app I> mapping 134217728 bytes for vinyl tuple arena...
+2022-01-17 06:06:55.210 [14] iproto/101/main I> binary: bound to 0.0.0.0:3301
+2022-01-17 06:06:55.211 [14] main/101/app I> recovery start
+2022-01-17 06:06:55.211 [14] main/101/app I> recovering from `/var/lib/tarantool/app/00000000000000000000.snap'
+2022-01-17 06:06:55.222 [14] main/101/app I> ready to accept requests
+2022-01-17 06:06:55.222 [14] main/108/checkpoint_daemon I> started
+2022-01-17 06:06:55.222 [14] main/108/checkpoint_daemon I> scheduled the next snapshot at Mon Jan 17 07:52:42 2022
+2022-01-17 06:06:55.222 [14] main/101/app I> set 'memtx_max_tuple_size' configuration option to 134217728
+2022-01-17 06:06:55.222 [14] main/101/app I> set 'checkpoint_count' configuration option to 6
+2022-01-17 06:06:55.223 [14] main/101/app tarantoolctl:532 E> Start failed: /usr/local/etc/tarantool/instances.enabled/app.lua:67: module 'cidLua/DevStat' not found:
+	no field package.preload['cidLua/DevStat']
+	no file './cidLua/DevStat.lua'
+	no file './cidLua/DevStat/init.lua'
+	no file './cidLua/DevStat.so'
+	no file '/opt/tarantool/.rocks/share/tarantool/cidLua/DevStat.lua'
+	no file '/opt/tarantool/.rocks/share/tarantool/cidLua/DevStat/init.lua'
+	no file '/opt/.rocks/share/tarantool/cidLua/DevStat.lua'
+	no file '/opt/.rocks/share/tarantool/cidLua/DevStat/init.lua'
+	no file '/.rocks/share/tarantool/cidLua/DevStat.lua'
+	no file '/.rocks/share/tarantool/cidLua/DevStat/init.lua'
+	no file '/opt/tarantool/.rocks/lib/tarantool/cidLua/DevStat.so'
+	no file '/opt/.rocks/lib/tarantool/cidLua/DevStat.so'
+	no file '/.rocks/lib/tarantool/cidLua/DevStat.so'
+	no file '/root/.luarocks/share/lua/5.1/cidLua/DevStat.lua'
+	no file '/root/.luarocks/share/lua/5.1/cidLua/DevStat/init.lua'
+	no file '/root/.luarocks/share/lua/cidLua/DevStat.lua'
+	no file '/root/.luarocks/share/lua/cidLua/DevStat/init.lua'
+	no file '/usr/local/share/tarantool/cidLua/DevStat.lua'
+	no file '/usr/local/share/tarantool/cidLua/DevStat/init.lua'
+	no file '/usr/share/tarantool/cidLua/DevStat.lua'
+	no file '/usr/share/tarantool/cidLua/DevStat/init.lua'
+	no file '/usr/local/share/lua/5.1/cidLua/DevStat.lua'
+	no file '/usr/local/share/lua/5.1/cidLua/DevStat/init.lua'
+	no file '/usr/share/lua/5.1/cidLua/DevStat.lua'
+	no file '/usr/share/lua/5.1/cidLua/DevStat/init.lua'
+	no file '/root/.luarocks/lib/lua/5.1/cidLua/DevStat.so'
+	no file '/root/.luarocks/lib/lua/cidLua/DevStat.so'
+	no file '/usr/local/lib64/tarantool/cidLua/DevStat.so'
+	no file '/usr/local/lib/tarantool/cidLua/DevStat.so'
+	no file '/usr/lib64/tarantool/cidLua/DevStat.so'
+	no file '/usr/local/lib64/lua/5.1/cidLua/DevStat.so'
+	no file '/usr/local/lib/lua/5.1/cidLua/DevStat.so'
+	no file '/usr/lib64/lua/5.1/cidLua/DevStat.so'
+	no file '/usr/share/lua/5.1/cidLua/DevStat.lua'
+	no file '/usr/share/lua/5.1/cidLua/DevStat/init.lua'
+	no file '/root/.luarocks/lib/lua/5.1/cidLua/DevStat.so'
+	no file '/root/.luarocks/lib/lua/cidLua/DevStat.so'
+	no file '/usr/local/lib64/tarantool/cidLua/DevStat.so'
+	no file '/usr/local/lib/tarantool/cidLua/DevStat.so'
+	no file '/usr/lib64/tarantool/cidLua/DevStat.so'
+	no file '/usr/local/lib64/lua/5.1/cidLua/DevStat.so'
+	no file '/usr/local/lib/lua/5.1/cidLua/DevStat.so'
+	no file '/usr/lib64/lua/5.1/cidLua/DevStat.so'
+2022-01-17 06:09:50.993 [15] main/101/app C> Tarantool 1.10.2-0-gc0d8063b6
+2022-01-17 06:09:50.993 [15] main/101/app C> log level 5
+2022-01-17 06:09:50.993 [15] main/101/app I> mapping 1073741824 bytes for memtx tuple arena...
+2022-01-17 06:09:50.993 [15] main/101/app I> mapping 134217728 bytes for vinyl tuple arena...
+2022-01-17 06:09:50.995 [15] iproto/101/main I> binary: bound to 0.0.0.0:3301
+2022-01-17 06:09:50.995 [15] main/101/app I> recovery start
+2022-01-17 06:09:50.995 [15] main/101/app I> recovering from `/var/lib/tarantool/app/00000000000000000000.snap'
+2022-01-17 06:09:51.006 [15] main/101/app I> ready to accept requests
+2022-01-17 06:09:51.006 [15] main/108/checkpoint_daemon I> started
+2022-01-17 06:09:51.006 [15] main/108/checkpoint_daemon I> scheduled the next snapshot at Mon Jan 17 07:13:14 2022
+2022-01-17 06:09:51.006 [15] main/101/app I> set 'memtx_max_tuple_size' configuration option to 134217728
+2022-01-17 06:09:51.006 [15] main/101/app I> set 'checkpoint_count' configuration option to 6
+2022-01-17 06:09:51.015 [15] main C> entering the event loop
+2022-03-28 12:04:10.978 [14] main/101/app C> Tarantool 1.10.2-0-gc0d8063b6
+2022-03-28 12:04:10.978 [14] main/101/app C> log level 5
+2022-03-28 12:04:10.978 [14] main/101/app I> mapping 1073741824 bytes for memtx tuple arena...
+2022-03-28 12:04:10.978 [14] main/101/app I> mapping 134217728 bytes for vinyl tuple arena...
+2022-03-28 12:04:10.980 [14] iproto/101/main I> binary: bound to 0.0.0.0:3301
+2022-03-28 12:04:10.980 [14] main/101/app I> initializing an empty data directory
+2022-03-28 12:04:10.987 [14] snapshot/101/main I> saving snapshot `/var/lib/tarantool/app/00000000000000000000.snap.inprogress'
+2022-03-28 12:04:10.991 [14] snapshot/101/main I> done
+2022-03-28 12:04:10.991 [14] main/101/app I> ready to accept requests
+2022-03-28 12:04:10.991 [14] main/108/checkpoint_daemon I> started
+2022-03-28 12:04:10.991 [14] main/108/checkpoint_daemon I> scheduled the next snapshot at Mon Mar 28 13:47:25 2022
+2022-03-28 12:04:10.991 [14] main/101/app I> set 'memtx_max_tuple_size' configuration option to 134217728
+2022-03-28 12:04:10.992 [14] main/101/app I> set 'checkpoint_count' configuration option to 6
+2022-03-28 12:04:11.000 [14] main C> entering the event loop
+2022-03-28 12:04:38.894 [13] main/101/app C> Tarantool 1.10.2-0-gc0d8063b6
+2022-03-28 12:04:38.894 [13] main/101/app C> log level 5
+2022-03-28 12:04:38.895 [13] main/101/app I> mapping 1073741824 bytes for memtx tuple arena...
+2022-03-28 12:04:38.895 [13] main/101/app I> mapping 134217728 bytes for vinyl tuple arena...
+2022-03-28 12:04:38.896 [13] iproto/101/main I> binary: bound to 0.0.0.0:3301
+2022-03-28 12:04:38.896 [13] main/101/app I> recovery start
+2022-03-28 12:04:38.897 [13] main/101/app I> recovering from `/var/lib/tarantool/app/00000000000000000000.snap'
+2022-03-28 12:04:38.909 [13] main/101/app I> ready to accept requests
+2022-03-28 12:04:38.909 [13] main/108/checkpoint_daemon I> started
+2022-03-28 12:04:38.909 [13] main/108/checkpoint_daemon I> scheduled the next snapshot at Mon Mar 28 13:24:55 2022
+2022-03-28 12:04:38.910 [13] main/101/app I> set 'memtx_max_tuple_size' configuration option to 134217728
+2022-03-28 12:04:38.910 [13] main/101/app I> set 'checkpoint_count' configuration option to 6
+2022-03-28 12:04:38.919 [13] main C> entering the event loop

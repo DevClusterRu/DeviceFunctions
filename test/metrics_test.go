@@ -25,3 +25,11 @@ func TestConfig(t *testing.T) {
 
 	fmt.Println(conf)
 }
+
+func TestDeviceCollection(t *testing.T) {
+	conf, err := config.NewConfig("../local.yml")
+	if err != nil {
+		log.Fatal("Conf broken: ", err)
+	}
+	fmt.Println(conf.GetDevicesCollection())
+}

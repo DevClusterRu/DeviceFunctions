@@ -1,0 +1,25 @@
+version: '3'
+services:
+  tarantool:
+    image: tarantool/tarantool:1.10.2
+    ports:
+      - "3301:3301"
+    volumes:
+      - ./tarantool/vol:/var/lib/tarantool
+      - ./tarantool/instance:/usr/local/etc/tarantool/instances.enabled
+      - ./tarantool/share:/usr/share/tarantool/
+      - ./tarantool/log:/var/log/tarantool
+    restart: always
+    #command: "tarantoolctl start app"
+    command: sh -c "tarantoolctl start app && tail -f /dev/null"
+
+  admin:
+    restart: always
+    image: quay.io/basis-company/tarantool-admin
+    ports:
+      - "8888:80"
+    environment:
+      - TARANTOOL_TCP_NODELAY=1
+      - TARANTOOL_DATABASE_QUERY=1
+    depends_on:
+      - tarantool

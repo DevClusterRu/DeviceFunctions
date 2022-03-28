@@ -34,7 +34,7 @@ type Config struct {
 	CAMBRIONIX_URL          string `yaml:"CAMBRIONIX_URL"`
 	MODE                    string `yaml:"MODE"`
 	Ttool                   *tarantool.Connection
-	IMEI_COLLECTION         map[string]string `yaml:"IMEI_COLLECTION"`
+	DEVICES_COLLECTION      map[string]string `yaml:"DEVICES_COLLECTION"`
 	S3BufferedChannel       chan struct{}
 	SSHClient               *goph.Client
 	SSHUser                 string `yaml:"SSHUser"`
@@ -63,15 +63,6 @@ func NewConfig(fileName string) (c *Config, err error) {
 	conf := new(Config)
 	if err = yaml.Unmarshal(file, conf); err != nil {
 		err = fmt.Errorf("file %s yaml unmarshal error: %v", fileName, err)
-	}
-
-	if conf.MODE != "debug" {
-		f, err := os.OpenFile("logfile.log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0777)
-		if err != nil {
-			log.Fatalf("error opening file: %v", err)
-		}
-		defer f.Close()
-		log.SetOutput(f)
 	}
 
 	conf.Ttool, err = tarantool.Connect(conf.TARANTOOL, tarantool.Opts{
@@ -130,6 +121,7 @@ func verifyHost(host string, remote net.Addr, key ssh.PublicKey) error {
 }
 
 func askIsHostTrusted(host string, key ssh.PublicKey) bool {
+	return false
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Printf("Unknown Host: %s \nFingerprint: %s \n", host, ssh.FingerprintSHA256(key))
 	fmt.Print("Would you like to add it? type yes or no: ")
