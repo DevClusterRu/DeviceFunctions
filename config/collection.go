@@ -11,13 +11,14 @@ type Collection struct {
 	DeviceId  int
 	HubSerial string
 	Port      int
+	Number    string
 }
 
 func (c *Config) GetDevicesCollection() map[string]Collection {
 	collection := make(map[string]Collection)
 	for k, v := range c.DEVICES_COLLECTION {
 		elements := strings.Split(v, "-")
-		if len(elements) < 4 {
+		if len(elements) < 5 {
 			log.Println("Wrong element count: ", v)
 			continue
 		}
@@ -37,6 +38,7 @@ func (c *Config) GetDevicesCollection() map[string]Collection {
 			DeviceId:  deviceId,
 			HubSerial: elements[2],
 			Port:      devicePort,
+			Number:    elements[4],
 		}
 	}
 
