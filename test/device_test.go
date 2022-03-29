@@ -3,7 +3,7 @@ package test
 import (
 	"fmt"
 	"github.com/DevClusterRu/DeviceFunctions/config"
-	"github.com/DevClusterRu/DeviceFunctions/platforms/adb"
+	"github.com/DevClusterRu/DeviceFunctions/platforms"
 	"log"
 	"testing"
 )
@@ -17,6 +17,6 @@ func TestDeviceCollection(t *testing.T) {
 }
 
 func TestNewDevice(t *testing.T) {
-	d := adb.NewDevice("ce071717c8ae0b02047e")
+	d := platforms.NewDevice("ce071717c8ae0b02047e", "android")
 	fmt.Println(d)
 }

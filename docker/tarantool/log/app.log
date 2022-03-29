@@ -186,3 +186,7 @@
 2022-03-29 08:15:15.748 [13] main/101/app I> set 'memtx_max_tuple_size' configuration option to 134217728
 2022-03-29 08:15:15.749 [13] main/101/app I> set 'checkpoint_count' configuration option to 6
 2022-03-29 08:15:15.761 [13] main C> entering the event loop
+2022-03-29 09:33:41.729 [13] main/108/checkpoint_daemon I> making snapshot...
+2022-03-29 09:33:41.730 [13] snapshot/101/main I> saving snapshot `/var/lib/tarantool/app/00000000000000000055.snap.inprogress'
+2022-03-29 09:33:41.734 [13] snapshot/101/main I> done
+2022-03-29 09:33:41.734 [13] main/108/checkpoint_daemon I> scheduled the next snapshot at Tue Mar 29 10:33:41 2022
