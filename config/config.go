@@ -45,6 +45,7 @@ type Config struct {
 	TELNYX_KEY              string `yaml:"TELNYX_KEY"`
 	TELNYX_CONNECTION       string `yaml:"TELNYX_CONNECTION"`
 	TELNYX_CLIENT           *http.Client
+	DevicesCollection       map[string]Collection
 }
 
 func NewConfig(fileName string) (c *Config, err error) {
@@ -102,6 +103,8 @@ func NewConfig(fileName string) (c *Config, err error) {
 		log.Fatal(err)
 	}
 
+	conf.DevicesCollection = conf.GetDevicesCollection()
+
 	return conf, err
 }
 
@@ -121,7 +124,6 @@ func verifyHost(host string, remote net.Addr, key ssh.PublicKey) error {
 }
 
 func askIsHostTrusted(host string, key ssh.PublicKey) bool {
-	return false
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Printf("Unknown Host: %s \nFingerprint: %s \n", host, ssh.FingerprintSHA256(key))
 	fmt.Print("Would you like to add it? type yes or no: ")
