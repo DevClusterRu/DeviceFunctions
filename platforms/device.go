@@ -2,6 +2,7 @@ package platforms
 
 import (
 	"context"
+	"github.com/DevClusterRu/DeviceFunctions/platforms/adb"
 	"os"
 	"sync"
 	"time"
@@ -37,4 +38,28 @@ type Device struct {
 	ContextCancel  context.CancelFunc
 	Mtx            *sync.Mutex
 	RebootCase     uint64
+}
+
+func NewDevice(serial string, platform string) *Device {
+
+	dev := &Device{
+		SerialNumber: serial,
+		Platform:     platform,
+		SilentFlag:   false,
+		SilentFlagAt: 0,
+		Ringing:      false,
+		SilentScore:  time.Now(),
+		Cnam:         make(map[string]int),
+		Mtx:          new(sync.Mutex),
+	}
+
+	switch platform {
+	case "android":
+		dev.DeviceNumber = adb.GetPhoneNumber(serial)
+		dev.Product = adb.GetModel(serial)
+		dev.Carrier = adb.GetCarrier(serial)
+		dev.DeviceNumber = adb.GetPhoneNumber(serial)
+	}
+
+	return dev
 }
